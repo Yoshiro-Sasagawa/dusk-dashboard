@@ -245,7 +245,7 @@ trait MakesAssertions
     {
         $this->actionCollector->collect(__FUNCTION__, func_get_args(), $this);
 
-        return parent::assertValue($field, $value);
+        return parent::assertValue($selector, $value);
     }
 
     /** {@inheritdoc} */
